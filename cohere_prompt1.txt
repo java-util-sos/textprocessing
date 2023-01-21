@@ -77,12 +77,18 @@ rate result (0-10: worst-best): 7- More progress!! It has the points stored as a
 prompt used: Make a JSON file that summarizes the main points of the Essay numerically. The points are concise. The number of the point is the key and the value is equal to the particular main point itself.
 rate result (0-10: worst-best):
 
-prompt used:
+prompt used:Make a list that summarizes the main points of the Essay as. Make sure the points are concise and short.
 rate result (0-10: worst-best):
 
-prompt used:
+prompt used:xx Make a numerical list that summarizes the main points of the Essay as concise and short.
 rate result (0-10: worst-best):
 
-prompt used:
+prompt used:** Make a numerical list that summarizes the main points of the Essay as. Make sure the points are concise and short.
 rate result (0-10: worst-best):
+  Essay 1: clear--- ran twice, first time: 7 points, second time: 8 points
+  Adi's Essay
+  Essay 2: clear -- ran twice, first time:5 points, second time: 3 points
+  Nuha's Essay
+  Article 1: clear--- ran twice, first time: 5 points, second time: 7 points
+  https://www.theglobeandmail.com/world/article-ukraine-russia-dnipro-kremenchuk-missile-attack/
 
