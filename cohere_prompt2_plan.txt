@@ -1,0 +1,70 @@
+List of Summary Used:
+1. The media used battles and atrocities to their advantage in order to propagate anti-war sentiments.
+
+2. Vietnam was the first televised war, with blood, bodies, and bombs being broadcast directly into the living rooms of millions of Americans and billions around the world.
+
+3. The world watched as the United States dropped 643,000 tons of ordinance during Operation Rolling Thunder just as they saw pictures of Vietnamese children covered in napalm in the street (Napalm Girl).
+
+4. The media heavily utilized these images to propagate their disapproval of the war.
+5. However, there is historical debate over the objectivity of the media during the conflict. Mirror theory argues that reporters "unconditionally followed the doctrine of objective journalism".
+
+6. Dr. Daniel Hallin (Professor of Communication at the UC San Diego), argues that the media only took on a non-objective stance once the upper-class started voicing their discontent.
+
+7. Hallin further argues that this was the catalyst in propagating dissent among the public to transfer from "the fringes of society into its main stream." 
+
+
+
+
+input: Make a list of questions using the points from this Questions in order of information given.
+(Temp= 0.7)
+
+result (rate 0-10): 
+
+
+input: Make a list of questions using the points from this Questions in order of information given.
+(Temp= 0.5)
+result (rate 0-10): 
+1. What is the media's role in the Vietnam War?
+2. How did the media use battles and atrocities to their advantage in order to propagate anti-war sentiments?
+3. What effect did the media's coverage of the war have on public opinion?
+4. Is there historical debate over the objectivity of the media during the conflict?
+5. What is the mirror theory?
+6. What is Dr. Daniel Hallin's argument regarding the media's role in the Vietnam War?
+7. What was the catalyst in propagating dissent among the public to transfer from "the fringes of society into its main stream"?
+
+
+
+input: Make a list of questions using the points from Questions, list in the result in order of information given.
+(Temp= 1)
+result (rate 0-10):
+1. What is the media's role in war?
+2. How did the media cover the Vietnam War?
+3. What impact did the media have on the Vietnam War?
+4. Is the media objective during war?
+5. What is the mirror theory?
+6. What is Dr. Daniel Hallin's argument?
+7. What is the catalyst that Dr. Daniel Hallin argues caused the media to take on a non-objective stance?
+
+
+
+input: Make a list of questions from the list X, the list of questions should be in the same order as X is being asked.
+
+result (rate 0-10):
+1. What is the media's role in the Vietnam War?
+2. How did the media use battles and atrocities to their advantage in order to propagate anti-war sentiments?
+3. What impact did the media have on the Vietnam War?
+4. What is the mirror theory?
+5. What is the historical debate over the objectivity of the media during the conflict?
+6. What is Dr. Daniel Hallin's argument?
+7. What was the catalyst that led to the media taking on a non-objective stance?
+
+input: ** Make a list of questions from the list X, the list of questions should be in the same order as X is being asked.
+(temp = 1) (no. of tokens = 500) 
+result (rate 0-10): (6/7)
+1. What is the media's role in war?
+2. How did the media cover the Vietnam War?
+3. What effect did the media have on the Vietnam War?
+4. Is the media objective during war?
+5. What is the mirror theory?
+6. What is Dr. Daniel Hallin's theory?
+7. What is the catalyst that propagates dissent among the public?

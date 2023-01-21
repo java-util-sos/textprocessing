@@ -1,0 +1,10 @@
+I will be using three types of samples to test my code:
+  1. An Essay
+  2. A page from a textbook
+  3. Education Journal
+
+I will be making two different prompts
+  1. A prompt to extract the n amount of key points taken away from a piece of text and output it into the form of a JSON file
+  2. A prompt to make questions based off of the results of the 1st prompt(above) and output it into the form of a JSON file
+  
+  
