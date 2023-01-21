@@ -7,6 +7,7 @@ def get_youtube_videos(text_input):
                 model="command-xlarge-nightly",
                 text=f"Get 3 educational youtube videos about the following topic {text_input}"
             )
+    return response.text
 
 def get_articles(text_input):
     raise NotImplementedError
