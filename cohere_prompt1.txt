@@ -49,13 +49,40 @@ Sample Test:
 2. A page from a Text Book:
 
 
-3. Education Journal:
-https://muse-jhu-edu.ezproxy.lib.torontomu.ca/article/251748
+3. Essay #2:
+
+prompt used: Take the Essay and make a numbered list of the main points
+
+rate result (0-10: worst-best): 0- does not do the job. It copies whatever the text is 
+
+prompt used:Make a numbered list that summarizes the main points of the Essay
+
+rate result (0-10: worst-best): 5- a little better, with shorter text, but it still is copying the text word-for-word
+
+prompt used: Make a list that summarizes the main points of the Essay
+rate result (0-10: worst-best): 9- it summarizes the text well.
+
+prompt used:Make a list that summarizes the main points of the Essay. Make sure the points are short
+rate result (0-10: worst-best): 9- closer to what i expected, points are shorter--but not concise
+
+prompt used: Make a list that summarizes the main points of the Essay. Make sure the points are concise
+rate result (0-10: worst-best): 9.5!- Points are to the point, 
+
+prompt used:Make a JSON file that lists the main points of the Essay numerically, the number of the point is the key and the value is the main point.
+rate result (0-10: worst-best): 6 - Made some progress, it is listing it in a JSON file form, but the points itself are too long. 
+
+prompt used: Make a JSON file that summarizes the main points of the Essay numerically. The points are concise. The number of the point is the key and the value is the main point.
+rate result (0-10: worst-best): 7- More progress!! It has the points stored as an arrray in the JSON file under the key name "Points: ". Need to make each num-point a key-value pair.
+
+prompt used: Make a JSON file that summarizes the main points of the Essay numerically. The points are concise. The number of the point is the key and the value is equal to the particular main point itself.
+rate result (0-10: worst-best):
 
 prompt used:
-Take the Essay and make a numbered list of the main points
-
 rate result (0-10: worst-best):
-2- does not do the job. List 2-3 valid key points, the rest are not valid. 
 
+prompt used:
+rate result (0-10: worst-best):
+
+prompt used:
+rate result (0-10: worst-best):
 
