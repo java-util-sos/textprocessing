@@ -2,7 +2,6 @@ import numpy as np
 import cohere
 from api_keys import cohere_key
 
-import cohere
 co = cohere.Client('{apiKey}')
 response = co.embed(
   model='large',
