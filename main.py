@@ -2,6 +2,8 @@ import numpy as np
 import cohere
 import cosine_distance
 import matplotlib.pyplot as plt
+import json
+import requests as rq
 
 from api_keys import cohere_key
 
