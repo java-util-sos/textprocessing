@@ -1,6 +1,6 @@
 I will be using three types of samples to test my code:
   1. An Essay
-  2. A News Article
+  2. A page from a textbook
   3. Education Journal
 
 I will be making two different prompts
