@@ -1,7 +1,61 @@
 Sample Test:
 1. Essay:
+  prompt used:
+  Take the key main points made in the Essay and put them into a number list.
+  rate result (0-10: worst-best):
+  5 - the result did give out a list of n number of key points, but some points were too long.
+  
+  prompt used:
+  Make a numbered list of short key points about the Essay
+  rate result (0-10: worst-best):
+  5 - the result did give out a list of n number of key points, but some points were too long.
+  
+  prompt used:
+  Take the Essay and make a list of the main points like:
+
+  1.
+  2.
+  3.
+  
+  rate result (0-10: worst-best):
+  7- An improvement, but it is still copying the text in some instances---but not all!
+  
+  prompt used:
+  Take the Essay and make a numbered list of the main points
+  
+  rate result (0-10: worst-best):
+  9- better
+  "1. The Tet Offensive was a turning point in the Vietnam War because it was the first time that the United States and South Vietnam were simultaneously attacked         by the North Vietnamese.
+  2. The Tet Offensive was a surprise attack and the United States and South Vietnam were unprepared for it.
+  3. The Tet Offensive was a turning point in the war because it showed that the North Vietnamese were capable of attacking major cities in the South.
+  4. The Tet Offensive was a turning point in the war because it resulted in the United States and South Vietnam suffering a massive loss in moral.
+  5. The American media's propagation of the Tet offensive resulted in a massive increase in anti-war sentiments."
+
+  
+  prompt used:
+  Take the Essay and make a numbered list of the main points *emsured the formatting of the text was fine.
+  
+  rate result (0-10: worst-best):
+  "1. The Tet Offensive was a key turning point in the Vietnam War.
+  2. Stanley Karnow's Vietnam: A History is one of the most influential books for historians to date and provides a very complete, balanced, view of the entire         Vietnam conflict.
+  3. James R. Arnold's book Tet Offensive 1968: Turning point in Vietnam focuses on the Tet offensive itself and provides contrasting viewpoints in certain areas.
+  4. The origin of the source is important as the historian, Stanley Karnow, is well reputed with degrees from Harvard (Literature and History), Sorbonne, University   of Paris, and Ecole des Sciences Politiques.
+  5. The purpose of Karnow's book is also quite valuable, as Vietnam: A History and its accompanying documentary are "widely regarded as an essential, even-handed      summation" of the events that occurred during the war.
+  6. Tet offensive 1968: Turning point in Vietnam James R. Arnold, 1990
+  7. The origin of this book is from James R. Arnold, a military historian who has written over thirty military history books and is renowned by the Army Historical    Foundation winning the Distinguished Writing Award three times.
+  8. The limitation of this source is that it does not provide the opposing point of view (specifically in reference to the media)."
+  
 
 2. A page from a Text Book:
 
 
 3. Education Journal:
+https://muse-jhu-edu.ezproxy.lib.torontomu.ca/article/251748
+
+prompt used:
+Take the Essay and make a numbered list of the main points
+
+rate result (0-10: worst-best):
+2- does not do the job. List 2-3 valid key points, the rest are not valid. 
+
+
