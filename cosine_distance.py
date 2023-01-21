@@ -1,5 +1,8 @@
 import cohere
 import numpy as np
+from api_keys import cohere_key
+
+print(cohere_key)
 
 def get_angle(a, b):
     """
@@ -14,3 +17,14 @@ def get_angle(a, b):
 
     theta = np.arccos(cos_theta)
     return theta
+
+def process_text(text_input):
+    """
+    Processes the text and returns the embeddings
+    """
+    co = cohere.Client(f'{cohere_key}')
+    response = co.embed(
+        model='large',
+        texts=text_input)
+    return response.embeddings
+    
