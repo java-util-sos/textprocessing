@@ -13,7 +13,7 @@ import json, time
 from api_keys import cohere_key
 
 cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+app.config['CORS_HEADERS'] = '*'
 
 REQUESTS = [
     'QUIZ',
