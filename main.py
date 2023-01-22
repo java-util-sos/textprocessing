@@ -12,14 +12,13 @@ import json, time
 
 from api_keys import cohere_key
 
-cors = CORS(app)
-app.config['CORS_HEADERS'] = '*'
-
 REQUESTS = [
     'QUIZ',
     'MINDMAP',
 ]
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = '*'
 
 @app.route('/', methods= ['GET'])
 def home():
