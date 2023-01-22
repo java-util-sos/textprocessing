@@ -80,6 +80,41 @@ def request_summary():
     else:
         return jsonify({'text': 'Unknown error'}).headers.add("Access-Control-Allow-Origin", "*")
     
+@cross_origin()
+@app.route('/summaryv2/', methods= ['POST'])
+def request_summary_unordered():
+    data = request.get_json()
+    long_form_text = data['text']
+    request_type = data['type']
+    
+    prompt_lst = long_form_text.split('\n')
+    
+    if request_type not in REQUESTS:
+        return jsonify({'text': 'Invalid request type'}).headers.add("Access-Control-Allow-Origin", "*")
+    
+    elif request_type == 'QUIZ':
+        question_answer = []
+        for prompt in prompt_lst:
+            summary = Summary_List.generate_summary(prompt)
+            questions = Summary_List.generate_questions_new_v2(summary)
+            
+            summary = summary.split('\n')
+            summary = [x for x in summary if x]
+            
+            questions = questions.split('\n')
+            questions = [x for x in questions if x]
+               
+        json = {'questions': questions,
+                'answers': summary}
+        
+        return jsonify(json)
+
+    elif request_type == 'MINDMAP':
+        return jsonify({'text': resources.generate_mindmap(prompt_lst)}).headers.add("Access-Control-Allow-Origin", "*")
+    else:
+        return jsonify({'text': 'Unknown error'}).headers.add("Access-Control-Allow-Origin", "*")
+    
+
 
 if __name__ == "__main__":
     app.run(port=7777)
