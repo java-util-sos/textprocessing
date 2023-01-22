@@ -11,3 +11,7 @@ def get_youtube_videos(text_input):
 
 def get_articles(text_input):
     raise NotImplementedError
+
+
+def get_mind_map_data(text_input):
+    raise NotImplementedError
