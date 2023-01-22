@@ -7,10 +7,16 @@ import matplotlib.pyplot as plt
 import json
 from flask import *
 from flask_cors import CORS, cross_origin
+import os
 
 import json, time
 
-from api_keys import cohere_key
+try:
+    from api_keys import cohere_key, estuary_key
+except:
+    cohere_key = os.getenv(cohere_key)
+    estuary_key = os.getenv(estuary_key)
+    
 
 REQUESTS = [
     'QUIZ',
