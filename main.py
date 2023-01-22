@@ -6,9 +6,14 @@ import resources
 import matplotlib.pyplot as plt
 import json
 from flask import *
+from flask_cors import CORS, cross_origin
+
 import json, time
 
 from api_keys import cohere_key
+
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 REQUESTS = [
     'QUIZ',
@@ -24,6 +29,7 @@ def home():
     
     return json.dumps(data_set)
 
+@cross_origin()
 @app.route('/summary/', methods= ['POST'])
 def request_summary():
     data = request.get_json()
