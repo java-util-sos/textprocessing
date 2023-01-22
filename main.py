@@ -113,6 +113,11 @@ def request_summary_unordered():
         return jsonify({'text': resources.generate_mindmap(prompt_lst)}).headers.add("Access-Control-Allow-Origin", "*")
     else:
         return jsonify({'text': 'Unknown error'}).headers.add("Access-Control-Allow-Origin", "*")
+
+    
+@app.route('/hello', methods = ['POST'])
+def aws_test():
+    return jsonify({'text': 'Hello World'})
     
 
 
