@@ -8,6 +8,10 @@ import json
 from flask import *
 from flask_cors import CORS, cross_origin
 import os
+import socket
+
+hostname = socket.gethostname()
+IPAddr = socket.gethostbyname(hostname)
 
 import json, time
 
@@ -122,4 +126,4 @@ def aws_test():
 
 
 if __name__ == "__main__":
-    app.run(port=7777)
+    app.run(host=IPAddr, threaded=false, port=7777)
