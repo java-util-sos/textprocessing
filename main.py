@@ -50,13 +50,16 @@ def request_summary():
         question_answer = []
         for prompt in prompt_lst:
             summary = Summary_List.generate_summary(prompt)
-            questions = Summary_List.generate_questions_new(summary, 5)
-            summary = summary.split('\n')
-            questions = questions.split('\n')
-            summary = [x for x in summary if x]
-            questions = [x for x in questions if x]
-            questions =questions[1:]
+            questions = Summary_List.generate_questions_new_v2(summary)
             
+            summary = summary.split('\n')
+            summary = [x for x in summary if x]
+            
+            questions = questions.split('\n')
+            questions = [x for x in questions if x]
+            
+            print(summary)
+            print(questions)
             
             for i, s in enumerate(summary):
                 summary[i] = s.split('. ')[1]
@@ -70,7 +73,7 @@ def request_summary():
                 
         json = {'question_jsons': question_answer}
         
-        return jsonify(json).headers.add("Access-Control-Allow-Origin", "*")
+        return jsonify(json)
 
     elif request_type == 'MINDMAP':
         return jsonify({'text': resources.generate_mindmap(prompt_lst)}).headers.add("Access-Control-Allow-Origin", "*")
