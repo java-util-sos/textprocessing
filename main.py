@@ -58,8 +58,8 @@ def request_summary():
             questions = questions.split('\n')
             questions = [x for x in questions if x]
             
-            print(summary)
-            print(questions)
+            #print(summary)
+            #print(questions)
             
             for i, s in enumerate(summary):
                 summary[i] = s.split('. ')[1]
