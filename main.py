@@ -38,6 +38,7 @@ def home():
 @app.route('/summary/', methods= ['POST'])
 def request_summary():
     data = request.get_json()
+    print(data)
     long_form_text = data['text']
     request_type = data['type']
     

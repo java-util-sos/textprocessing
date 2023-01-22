@@ -16,7 +16,7 @@ def generate_summary(prompt):
   global cohere_key
   co = cohere.Client(f'{cohere_key}')
   response = co.generate(
-    model='command-xlarge-nightly',
+    model='command-medium-nightly',
     prompt=f'Make a numerical list that summarizes the main points of the Essay as. Make sure the points are concise and short.\n\nEssay = {prompt}\'\'\'\n\'\'\'',
     max_tokens=1000,
     temperature=0.9,
@@ -40,7 +40,7 @@ def generate_questions(prompt_lst):
   n = len(prompt_lst)
   
   response = co.generate(
-    model='command-xlarge-nightly',
+    model='command-medium-nightly',
     prompt=f'Make a list of questions from the list, the list of questions should be in the same order as the list is being asked. There should be as many questions as in the list.\n\n\nX= \'\'\' {prompts}\" \'\'\'',
     max_tokens=500,
     temperature=1,
@@ -57,7 +57,7 @@ def generate_questions_new(prompt, n):
   co = cohere.Client(f'{cohere_key}')
   
   response = co.generate(
-    model='command-xlarge-nightly',
+    model='command-medium-nightly',
     prompt=f'Make a list of questions from the list {n}, the list of questions should be in the same order as {n} is being asked.\n\n\nX= \'\'\' {prompt}\" \'\'\'',
     max_tokens=500,
     temperature=1,
@@ -74,7 +74,7 @@ def generate_questions_new_v2(prompt):
   co = cohere.Client(f'{cohere_key}')
   
   response = co.generate(
-    model='command-xlarge-nightly',
+    model='command-medium-nightly',
     prompt=f'Make a list of questions from the list, the list of questions should be in the same order as the list is being asked. There should be as many questions as in the list.\n\n\nX= \'\'\' {prompt}\" \'\'\'',
     max_tokens=500,
     temperature=1,
