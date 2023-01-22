@@ -39,7 +39,7 @@ def request_summary():
     prompt_lst = long_form_text.split('\n')
     
     if request_type not in REQUESTS:
-        return jsonify({'text': 'Invalid request type'})
+        return jsonify({'text': 'Invalid request type'}).headers.add("Access-Control-Allow-Origin", "*")
     
     elif request_type == 'QUIZ':
         question_answer = []
@@ -65,12 +65,12 @@ def request_summary():
                 
         json = {'question_jsons': question_answer}
         
-        return jsonify(json)
+        return jsonify(json).headers.add("Access-Control-Allow-Origin", "*")
 
     elif request_type == 'MINDMAP':
-        return jsonify({'text': resources.generate_mindmap(prompt_lst)})
+        return jsonify({'text': resources.generate_mindmap(prompt_lst)}).headers.add("Access-Control-Allow-Origin", "*")
     else:
-        return jsonify({'text': 'Unknown error'})
+        return jsonify({'text': 'Unknown error'}).headers.add("Access-Control-Allow-Origin", "*")
     
 
 if __name__ == "__main__":
